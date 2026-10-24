@@ -7,8 +7,10 @@
     /* ======================================================================
        PENGATURAN UKURAN LOGO NAVBAR (Bisa diubah angka px di bawah ini)
        ====================================================================== */
-    --logo-height-desktop: 70px;  /* Ukuran di Laptop / Komputer */
-    --logo-height-mobile: 52px;   /* Ukuran di Layar Handphone (HP) */
+    --logo-height-desktop: 70px;
+    /* Ukuran di Laptop / Komputer */
+    --logo-height-mobile: 52px;
+    /* Ukuran di Layar Handphone (HP) */
 
     /* Palet Warna Utama */
     --color-black: #111315;
@@ -17,7 +19,7 @@
     --color-white: #FFFFFF;
     --color-bg-light: #F5F6F8;
     --color-border: #E2E5EA;
-    
+
     /* Aksen Merah Otomotif */
     --color-red: #D91C24;
     --color-red-hover: #B5141B;
@@ -44,7 +46,9 @@
 }
 
 /* Reset & Base */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -84,7 +88,9 @@ ul {
     list-style: none;
 }
 
-button, input, select {
+button,
+input,
+select {
     font-family: inherit;
     font-size: inherit;
 }
@@ -114,9 +120,17 @@ button, input, select {
     background-color: var(--color-bg-light);
 }
 
-.text-white { color: var(--color-white) !important; }
-.text-red { color: var(--color-red) !important; }
-.text-muted-light { color: var(--text-muted-light) !important; }
+.text-white {
+    color: var(--color-white) !important;
+}
+
+.text-red {
+    color: var(--color-red) !important;
+}
+
+.text-muted-light {
+    color: var(--text-muted-light) !important;
+}
 
 /* ==========================================================================
    Top Bar & Navbar
@@ -195,10 +209,11 @@ button, input, select {
 /* Penyesuaian ukuran logo saat dibuka di layar HP */
 @media (max-width: 768px) {
     .brand-logo-img {
-        height: var(--logo-height-mobile, 52px);
+        height: var(--logo-height-mobile, 75px);
         max-width: none;
     }
 }
+
 .brand-rjm {
     background-color: var(--color-red);
     color: var(--color-white);
@@ -1434,7 +1449,7 @@ button, input, select {
     display: block;
 }
 
-.purchase-radio input:checked + .radio-box {
+.purchase-radio input:checked+.radio-box {
     border-color: var(--color-red);
     background-color: var(--color-red-soft);
 }
@@ -1943,6 +1958,7 @@ button, input, select {
         padding: 10px 16px;
     }
 }
+
 /* Mengubah warna tombol Detail Motor menjadi Outline Merah */
 .motor-card-actions .js-detail-btn {
     background-color: #FDF2F2;
@@ -1954,21 +1970,26 @@ button, input, select {
     background-color: var(--color-red);
     color: var(--color-white);
 }
+
 /* Menyembunyikan kotak harga dan cicilan pada kartu katalog */
 .motor-pricing-box {
     display: none !important;
 }
+
 /* Menyembunyikan kotak harga OTR, DP, dan sumber data di dalam modal */
 .modal-price-card {
     display: none !important;
 }
+
 /* Membuat section Katalog dan Tentang saling berdekatan rapat */
 #katalog {
     padding-bottom: 20px;
 }
+
 #tentang {
     padding-top: 0px;
 }
+
 /* ==========================================================================
    Custom Image Slider di Modal Detail Motor
    ========================================================================== */
@@ -2029,8 +2050,13 @@ button, input, select {
     background-color: var(--color-red);
 }
 
-.prev-btn { left: 10px; }
-.next-btn { right: 10px; }
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
 
 .slider-dots {
     position: absolute;
@@ -2069,6 +2095,7 @@ button, input, select {
     color: var(--color-white);
     border-color: var(--color-red);
 }
+
 /* ==========================================================================
    Menyembunyikan Seluruh Fitur & Tombol Simulasi Kredit Secara Aman
    ========================================================================== */
