@@ -172,14 +172,19 @@ select {
     z-index: 100;
     background-color: var(--color-white);
     border-bottom: 1px solid var(--color-border);
-    height: 76px; /* Tinggi navbar terkunci tetap di Desktop */
+    height: 76px;
+    min-height: 76px;
+    max-height: 76px;
+    overflow: visible;
+    /* Tinggi background putih navbar terkunci permanen di Desktop */
 }
 
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 76px; /* Tinggi navbar terkunci tetap */
+    height: 76px;
+    min-height: 76px;
     max-height: 76px;
     padding: 0;
 }
@@ -192,28 +197,24 @@ select {
     font-weight: 800;
     letter-spacing: -0.03em;
     height: 100%;
+    max-height: 100%;
+    flex-shrink: 0;
 }
 
 /* Pengaturan ukuran gambar logo di Navbar */
 .brand-logo-img {
-    height: var(--logo-height-desktop, 65px);
+    height: var(--logo-height-desktop, 62px);
     width: auto;
-    max-height: 70px; /* Batas aman agar logo tidak menembus navbar */
     object-fit: contain;
     display: block;
+    transform: scale(var(--logo-scale, 1));
+    transform-origin: left center;
 }
 
 /* Pengaturan ukuran logo di bagian Footer */
 .footer-logo .brand-logo-img {
-    height: 80px;
-}
-
-/* Penyesuaian ukuran logo saat dibuka di layar HP */
-@media (max-width: 768px) {
-    .brand-logo-img {
-        height: var(--logo-height-mobile, 52px);
-        max-height: 56px;
-    }
+    height: 60px;
+    width: auto;
 }
 
 .brand-rjm {
@@ -1571,18 +1572,23 @@ select {
     }
 
     .site-header {
-        height: 64px; /* Tinggi navbar terkunci tetap di HP */
+        height: 64px;
+        min-height: 64px;
+        max-height: 64px;
+        overflow: visible;
+        /* Tinggi background putih navbar terkunci permanen di HP */
     }
 
     .navbar {
-        height: 64px; /* Tinggi navbar terkunci tetap di HP */
+        height: 64px;
+        min-height: 64px;
         max-height: 64px;
         padding: 0;
     }
 
     .brand-logo-img {
         height: var(--logo-height-mobile, 52px);
-        max-height: 56px;
+        width: auto;
         max-width: none;
         object-fit: contain;
     }
@@ -1942,11 +1948,6 @@ select {
 @media (max-width: 480px) {
     .container {
         padding: 0 14px;
-    }
-
-    .brand-logo-img {
-        height: var(--logo-height-mobile, 48px);
-        max-width: none;
     }
 
     .hero-title {
