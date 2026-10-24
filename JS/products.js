@@ -39,13 +39,13 @@ const MOTOR_PRODUCTS = [
         priceSource: "PT Astra Honda Motor (astra-honda.com)",
         lastUpdated: "Januari 2026",
         minDp: 2300000,
-        image: "ASET/IMAGES/beat-cbs.png",
+        image: "ASET/IMAGES/beatcbs/merah-birucbs.png",
       images: [
-            "ASET/IMAGES/beatcbs/cbs-merah.png", // Slide 1 (Cocok dengan warna ke-1)
-            "ASET/IMAGES/biru-hitam.png",       // Slide 2 (Cocok dengan warna ke-2)
-            "ASET/IMAGES/beat-cbs.png",
-            "ASET/IMAGES/biru-merah.png",       // Slide 2 (Cocok dengan warna ke-2)
-            "ASET/IMAGES/260629064631_178273368277269.jpeg"   // Slide 3 (Cocok dengan warna ke-3)
+            "ASET/IMAGES/beatcbs/merah-cbs.png",
+            "ASET/IMAGES/beatcbs/cbs-biru.png",
+            "ASET/IMAGES/beatcbs/beat-cbs.png",
+            "ASET/IMAGES/beatcbs/merah-birucbs.png",
+            "ASET/IMAGES/beatcbs/black-mattecbs.png"
         ],
 
         // 3. Nama tombol warna (urutannya menyesuaikan daftar images di atas):
@@ -136,11 +136,11 @@ const MOTOR_PRODUCTS = [
         priceSource: "PT Astra Honda Motor (astra-honda.com)",
         lastUpdated: "Januari 2026",
         minDp: 2500000,
-        image: "ASET/IMAGES/260629064631_178273368277269.jpeg",
+        image: "ASET/beatkey/blue-key.jpeg",
         images: [
-            "ASET/IMAGES/brown-key.png",
-            "ASET/IMAGES/biru-key.png",
-            "ASET/IMAGES/hitam-key.png"
+            "ASET/beatkey/bworn-key.jpeg",
+            "ASET/beatkey/blue-key.jpeg",
+            "ASET/beatkey/black-key.jpeg"
         ],
         colors: ["Deluxe Matte Brown", "Deluxe Matte Blue", "Deluxe Matte Black"],
         specs: {
