@@ -172,15 +172,16 @@ select {
     z-index: 100;
     background-color: var(--color-white);
     border-bottom: 1px solid var(--color-border);
+    height: 76px; /* Tinggi navbar terkunci tetap di Desktop */
 }
 
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 76px;
-    height: auto;
-    padding: 6px 0;
+    height: 76px; /* Tinggi navbar terkunci tetap */
+    max-height: 76px;
+    padding: 0;
 }
 
 .brand-logo {
@@ -190,13 +191,14 @@ select {
     font-size: 1.5rem;
     font-weight: 800;
     letter-spacing: -0.03em;
+    height: 100%;
 }
 
 /* Pengaturan ukuran gambar logo di Navbar */
 .brand-logo-img {
-    height: var(--logo-height-desktop, 70px);
+    height: var(--logo-height-desktop, 65px);
     width: auto;
-    max-height: 90px;
+    max-height: 70px; /* Batas aman agar logo tidak menembus navbar */
     object-fit: contain;
     display: block;
 }
@@ -209,8 +211,8 @@ select {
 /* Penyesuaian ukuran logo saat dibuka di layar HP */
 @media (max-width: 768px) {
     .brand-logo-img {
-        height: var(--logo-height-mobile, 75px);
-        max-width: none;
+        height: var(--logo-height-mobile, 52px);
+        max-height: 56px;
     }
 }
 
@@ -1568,14 +1570,19 @@ select {
         padding: 4px 0;
     }
 
+    .site-header {
+        height: 64px; /* Tinggi navbar terkunci tetap di HP */
+    }
+
     .navbar {
-        min-height: 64px;
-        height: auto;
-        padding: 6px 0;
+        height: 64px; /* Tinggi navbar terkunci tetap di HP */
+        max-height: 64px;
+        padding: 0;
     }
 
     .brand-logo-img {
         height: var(--logo-height-mobile, 52px);
+        max-height: 56px;
         max-width: none;
         object-fit: contain;
     }
