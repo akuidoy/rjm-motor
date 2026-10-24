@@ -207,6 +207,7 @@ select {
     width: auto;
     object-fit: contain;
     display: block;
+    margin-left: 14px; /* Geser posisi logo ke kanan */
     transform: scale(var(--logo-scale, 1));
     transform-origin: left center;
 }
