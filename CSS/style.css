@@ -4,6 +4,12 @@
    ========================================================================== */
 
 :root {
+    /* ======================================================================
+       PENGATURAN UKURAN LOGO NAVBAR (Bisa diubah angka px di bawah ini)
+       ====================================================================== */
+    --logo-height-desktop: 70px;  /* Ukuran di Laptop / Komputer */
+    --logo-height-mobile: 52px;   /* Ukuran di Layar Handphone (HP) */
+
     /* Palet Warna Utama */
     --color-black: #111315;
     --color-dark-surface: #181B1F;
@@ -158,21 +164,15 @@ button, input, select {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 76px;
+    min-height: 76px;
+    height: auto;
+    padding: 6px 0;
 }
 
 .brand-logo {
     display: inline-flex;
     align-items: center;
-    font-size: 1.5rem;
-    font-weight: 800;
-    letter-spacing: -0.03em;
-
-}
-.brand-logo {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px; /* Memberi jarak rapi jika Anda menggabungkan gambar logo + teks */
+    gap: 10px;
     font-size: 1.5rem;
     font-weight: 800;
     letter-spacing: -0.03em;
@@ -180,21 +180,23 @@ button, input, select {
 
 /* Pengaturan ukuran gambar logo di Navbar */
 .brand-logo-img {
-    height: 99px;       /* Tinggi ideal untuk navbar berukuran 76px */
-    width: auto;        /* Lebar menyesuaikan proporsi asli logo agar tidak gepeng */
+    height: var(--logo-height-desktop, 70px);
+    width: auto;
+    max-height: 90px;
     object-fit: contain;
     display: block;
 }
 
 /* Pengaturan ukuran logo di bagian Footer */
 .footer-logo .brand-logo-img {
-    height: 100px;
+    height: 80px;
 }
 
 /* Penyesuaian ukuran logo saat dibuka di layar HP */
 @media (max-width: 768px) {
     .brand-logo-img {
-        height: 34px;   /* Sedikit lebih ringkas di layar smartphone */
+        height: var(--logo-height-mobile, 52px);
+        max-width: none;
     }
 }
 .brand-rjm {
@@ -1552,12 +1554,14 @@ button, input, select {
     }
 
     .navbar {
-        height: 64px;
+        min-height: 64px;
+        height: auto;
+        padding: 6px 0;
     }
 
     .brand-logo-img {
-        height: 38px;
-        max-width: 140px;
+        height: var(--logo-height-mobile, 52px);
+        max-width: none;
         object-fit: contain;
     }
 
@@ -1919,8 +1923,8 @@ button, input, select {
     }
 
     .brand-logo-img {
-        height: 34px;
-        max-width: 125px;
+        height: var(--logo-height-mobile, 48px);
+        max-width: none;
     }
 
     .hero-title {
