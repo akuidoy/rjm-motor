@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RJM MOTOR | Showroom & Dealer Sepeda Motor Baru</title>
+    <meta name="description" content="RJM MOTOR melayani pembelian sepeda motor baru secara tunai dan kredit dengan harga OTR transparan dan simulasi cicilan yang jelas.">
+    
+    <!-- Google Fonts: Plus Jakarta Sans (Tegas, bersih, modern) & JetBrains Mono untuk angka teknis -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet Utama -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header & Navbar -->
+    <header class="site-header" id="header">
+        <div class="container navbar">
+            <a href="#beranda" class="brand-logo" aria-label="Beranda RJM MOTOR">
+    <img src="ASET/IMAGES/logo-rjm.png" alt="ASET/IMAGES/logo-rjm.png" class="brand-logo-img">
+</a>
+            <nav class="nav-menu" id="navMenu" aria-label="Navigasi Utama">
+                <ul class="nav-list">
+                    <li><a href="#beranda" class="nav-link active">Beranda</a></li>
+                    <li><a href="#katalog" class="nav-link">Katalog Motor</a></li>
+                    <li><a href="#tentang" class="nav-link">Tentang Kami</a></li>
+                    <li><a href="#kontak" class="nav-link">Kontak</a></li>
+                </ul>
+                <div class="nav-mobile-cta">
+                    <button type="button" class="btn btn-primary btn-full js-wa-general">
+                        Hubungi Sales (WhatsApp)
+                    </button>
+                </div>
+            </nav>
+
+            <div class="nav-actions">
+                <button type="button" class="btn btn-outline-dark btn-sm js-wa-general">
+                    <svg class="icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    <span>WhatsApp Sales</span>
+                </button>
+                <button type="button" class="hamburger-btn" id="hamburgerBtn" aria-label="Buka Menu Navigasi" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="beranda">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-tag">RINA JAYA MOTOR</div>
+                    <h1 class="hero-title">SHOWROOM SEPEDA MOTOR BARU !</h1>
+                    <p class="hero-subtitle">Pilihan motor terbaik dengan harga bersahabat dan proses yang mudah.</p>
+                    
+                    <div class="hero-cta-group">
+                        <a href="#katalog" class="btn btn-primary btn-lg">Lihat Katalog</a>
+                    </div>
+
+                    <div class="hero-specs-strip">
+                        <div class="strip-item">
+                            <span class="strip-label">Metode Pembelian</span>
+                            <span class="strip-value">Tunai & Kredit Resmi</span>
+                        </div>
+                        <div class="strip-item">
+                            <span class="strip-label">Pilihan Tenor</span>
+                            <span class="strip-value">11 s/d 35 Bulan</span>
+                        </div>
+                        <div class="strip-item">
+                            <span class="strip-label">Skema Leasing</span>
+                            <span class="strip-value">FIFGROUP, Adira Finance, OTO Finance</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="hero-image-frame">
+                        <!-- Menggunakan foto motor berkualitas tinggi dengan fallback otomatis jika offline/gagal muat -->
+                        <img 
+                            src="ASET/IMAGES/hero-motor.jpg" 
+                            alt="Visual Utama Sepeda Motor RJM MOTOR" 
+                            class="hero-img"
+                            onerror="this.onerror=null; this.src=window.createMotorFallbackSvg('RJM MOTOR SHOWROOM', 'UNIT DISPLAY TERBARU', 'dark');"
+                        >
+                        <div class="hero-caption-bar">
+                            <span>Ketersediaan unit, warna, dan nomor rangka (VIN) terbaru dapat dikonfirmasi langsung bersama tim sales kami.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Katalog Motor Section -->
+        <section class="catalog-section section-padding" id="katalog">
+            <div class="container">
+                <div class="section-header">
+                    <div>
+                        <span class="section-eyebrow">DAFTAR UNIT & HARGA OTR</span>
+                        <h2 class="section-title">Katalog Sepeda Motor</h2>
+                    </div>
+                </div>
+
+                <!-- Filter & Search Bar -->
+                <div class="catalog-controls" role="region" aria-label="Filter dan Pencarian Katalog">
+                    <div class="control-group search-group">
+                        <label for="searchInput" class="control-label">Cari Nama / Tipe Motor</label>
+                        <div class="input-with-icon">
+                            <svg class="input-icon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                            <input type="search" id="searchInput" class="form-control" placeholder="Contoh: BeAT, Vario 125, PCX, ADV...">
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label for="brandFilter" class="control-label">Merek</label>
+                        <select id="brandFilter" class="form-select">
+                            <option value="all">Semua Merek</option>
+                            <option value="Honda">Honda</option>
+                        </select>
+                    </div>
+
+                    <div class="control-group">
+                        <label for="categoryFilter" class="control-label">Kategori</label>
+                        <select id="categoryFilter" class="form-select">
+                            <option value="all">Semua Kategori</option>
+                            <option value="Matic">Matic (Skutik)</option>
+                            <option value="Bebek">Bebek (Cub)</option>
+                            <option value="Sport">Sport</option>
+                            <option value="Listrik">Motor Listrik</option>
+                        </select>
+                    </div>
+
+                    <div class="control-group">
+                        <label for="sortFilter" class="control-label">Urutkan Harga</label>
+                        <select id="sortFilter" class="form-select">
+                            <option value="default">Urutan Standar</option>
+                            <option value="price-asc">Harga Termurah</option>
+                            <option value="price-desc">Harga Termahal</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Status Hasil Pencarian -->
+                <div class="catalog-meta">
+                    <span id="catalogCountText">Menampilkan seluruh unit tersedia</span>
+                    <button type="button" id="resetFilterBtn" class="btn-text-reset" style="display: none;">Reset Filter</button>
+                </div>
+
+                <!-- Grid Katalog Produk (Diisi melalui JavaScript) -->
+                <div class="catalog-grid" id="catalogGrid"></div>
+            </div>
+        </section>
+        <!-- Keunggulan & Proses Pembelian Section -->
+        <section class="about-section section-padding" id="tentang">
+            <div class="container">
+                <div class="section-header">
+                    <div>
+                        <span class="section-eyebrow">STANDAR LAYANAN RJM MOTOR</span>
+                        <h2 class="section-title">Keunggulan & Alur Pembelian</h2>
+                    </div>
+                    <p class="section-desc">
+                        Kami mengutamakan keterbukaan informasi harga, kejelasan struktur pembiayaan, serta kemudahan proses administrasi dari pemesanan hingga pengiriman unit.
+                    </p>
+                </div>
+
+                <!-- 4 Keunggulan Utama -->
+                <div class="features-grid">
+                    <div class="feature-box">
+                        <div class="feature-num">01</div>
+                        <h3 class="feature-title">Informasi Harga Transparan</h3>
+                        <p class="feature-text">Seluruh harga yang tercantum mencantumkan sumber acuan dan tanggal pembaruan yang jelas tanpa biaya tersembunyi.</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-num">02</div>
+                        <h3 class="feature-title">Layanan Tunai & Kredit</h3>
+                        <p class="feature-text">Melayani pembelian secara tunai (Cash On Delivery / transfer resmi) maupun pengajuan kredit dengan berbagai pilihan tenor.</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-num">03</div>
+                        <h3 class="feature-title">Unit Baru Bergaransi Pabrikan</h3>
+                        <p class="feature-text">Setiap sepeda motor yang diserahkan merupakan unit baru dilengkapi buku servis dan garansi resmi sesuai ketentuan produsen.</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-num">04</div>
+                        <h3 class="feature-title">Konsultasi & Penjemputan Berkas</h3>
+                        <p class="feature-text">Tim sales siap membantu konsultasi pemilihan tipe motor serta memfasilitasi pengumpulan dokumen persyaratan kredit.</p>
+                    </div>
+                </div>
+
+                <!-- Alur Pembelian -->
+                <div class="process-wrapper">
+                    <h3 class="subsection-title">Alur Pembelian Sepeda Motor</h3>
+                    <div class="process-steps">
+                        <div class="step-card">
+                            <span class="step-badge">Langkah 1</span>
+                            <h4>Pilih Unit & Konfirmasi Stok</h4>
+                            <p>Pilih tipe dan warna motor pada katalog, lalu hubungi sales untuk memastikan ketersediaan stok dan harga OTR sesuai wilayah KTP Anda.</p>
+                        </div>
+                        <div class="step-card">
+                            <span class="step-badge">Langkah 2</span>
+                            <h4>Pemberkasan (Tunai / Kredit)</h4>
+                            <p>Untuk pembelian tunai cukup melampirkan KTP & KK untuk pembuatan STNK/BPKB. Untuk kredit, tim leasing akan melakukan verifikasi data.</p>
+                        </div>
+                        <div class="step-card">
+                            <span class="step-badge">Langkah 3</span>
+                            <h4>Pengiriman Unit & Pembayaran</h4>
+                            <p>Setelah administrasi selesai (atau PO turun untuk kredit), unit motor dikirimkan ke alamat Anda disertai pelunasan pembayaran / uang muka.</p>
+                        </div>
+                        <div class="step-card">
+                            <span class="step-badge">Langkah 4</span>
+                            <h4>Penyerahan STNK, Plat & BPKB</h4>
+                            <p>Sales akan menginformasikan begitu STNK dan plat nomor selesai diproses oleh pihak berwenang untuk diserahkan kepada konsumen.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section section-padding bg-light-gray" id="faq">
+            <div class="container">
+                <div class="section-header">
+                    <div>
+                        <span class="section-eyebrow">INFORMASI PEMBELI</span>
+                        <h2 class="section-title">Pertanyaan yang Sering Diajukan (FAQ)</h2>
+                    </div>
+                    <p class="section-desc">
+                        Penjelasan lengkap mengenai ketentuan harga OTR, uang muka, dokumen persyaratan kredit, hingga masa garansi.
+                    </p>
+                </div>
+
+                <div class="faq-list" id="faqAccordion">
+                    <div class="faq-item">
+                        <button type="button" class="faq-question" aria-expanded="false">
+                            <span>Mengapa harga OTR dapat berbeda tergantung wilayah KTP pembeli?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Harga On The Road (OTR) sudah mencakup Bea Balik Nama Kendaraan Bermotor (BBNKB) dan Pajak Kendaraan Bermotor (PKB) yang tarifnya ditetapkan oleh Pemerintah Daerah masing-masing provinsi/kabupaten. Oleh sebab itu, harga OTR acuan DKI Jakarta dapat memiliki selisih dengan wilayah Jawa Barat, Banten, atau daerah lainnya.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button type="button" class="faq-question" aria-expanded="false">
+                            <span>Apa saja dokumen persyaratan untuk pengajuan kredit motor?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Persyaratan dokumen standar untuk pengajuan kredit perorangan meliputi:</p>
+                            <ul>
+                                <li>Fotokopi / Foto KTP Pemohon (dan KTP Pasangan jika sudah menikah, atau Penjamin jika belum menikah).</li>
+                                <li>Fotokopi / Foto Kartu Keluarga (KK).</li>
+                                <li>Bukti tempat tinggal (rekening listrik/PBB/bukti sewa jika mengontrak).</li>
+                                <li>Bukti penghasilan (slip gaji untuk karyawan atau bukti usaha/mutasi rekening untuk wiraswasta).</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button type="button" class="faq-question" aria-expanded="false">
+                            <span>Apakah uang muka (DP) dibayarkan sebelum atau sesudah motor dikirim?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Demi keamanan transaksi konsumen, pembayaran Uang Muka (DP) kredit maupun pelunasan pembelian tunai dapat dilakukan pada saat unit sepeda motor tiba di rumah Anda (Cash On Delivery) atau melalui rekening resmi showroom yang tertera pada Surat Pemesanan Kendaraan (SPK).</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button type="button" class="faq-question" aria-expanded="false">
+                            <span>Apa perbedaan antara DP Murni dan DP Bayar (DP Promo) pada brosur kredit?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p><strong>DP Sistem (Gross DP)</strong> adalah nominal uang muka yang tercantum di kontrak leasing sebagai pengurang harga OTR. Sedangkan <strong>DP Bayar (Net DP)</strong> adalah nominal aktual yang dibayarkan konsumen setelah dikurangi program diskon/subsidi uang muka yang sedang berlaku pada bulan tersebut. Hubungi sales kami untuk mengetahui promo subsidi DP bulan ini.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lokasi & Kontak Section -->
+        <section class="contact-section section-padding" id="kontak">
+            <div class="container">
+                <div class="section-header">
+                    <div>
+                        <span class="section-eyebrow">HUBUNGI SHOWROOM</span>
+                        <h2 class="section-title">Informasi Kontak & Lokasi</h2>
+                    </div>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info-panel">
+                        <h3>Layanan Konsultasi Pembelian</h3>
+                        <p class="contact-lead">
+                            Untuk konfirmasi harga OTR sesuai domisili KTP Anda, pengecekan ketersediaan warna unit, maupun permintaan tabel angsuran resmi dari perusahaan pembiayaan, silakan hubungi tim sales RJM MOTOR.
+                        </p>
+
+                        <div class="info-list">
+                            <div class="info-item">
+                                <span class="info-label">Nama Showroom</span>
+                                <span class="info-val">RJM MOTOR</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Saluran Komunikasi</span>
+                                <span class="info-val" id="contactWaDisplay">Konfirmasi via Tombol WhatsApp Resmi</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Alamat Fisik & Jam Operasional</span>
+                                <span class="info-val info-unverified">Silakan hubungi sales melalui WhatsApp untuk mendapatkan titik lokasi (Share Location) showroom dan jadwal kunjungan.</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-cta-box">
+                            <button type="button" class="btn btn-primary btn-lg js-wa-general">
+                                Hubungi Sales via WhatsApp
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="map-placeholder-panel" style="padding: 0; overflow: hidden; height: 100%; min-height: 350px;">
+    <iframe 
+        src="https://maps.google.com/maps?q=-6.4578539331833325, 106.4400045304299&z=16&output=embed" 
+        width="100%" 
+        height="100%" 
+        style="border:0; min-height: 350px;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#beranda" class="brand-logo footer-logo">
+    <!-- Gunakan logo-rjm-putih.png jika logo utama Anda berwarna hitam agar tetap terlihat di background hitam -->
+                          <img src="ASET/IMAGES/logo-rjm.png" alt="Logo RJM MOTOR" class="brand-logo-img">
+                        </a>
+                    <p class="footer-desc">
+                        Showroom dan layanan penjualan sepeda motor baru secara tunai maupun kredit dengan informasi harga yang jujur, transparan, dan terstruktur.
+                    </p>
+                </div>
+
+                <div class="footer-nav">
+                    <h4>Navigasi Cepat</h4>
+                    <ul>
+                        <li><a href="#beranda">Beranda</a></li>
+                        <li><a href="#katalog">Katalog Motor</a></li>
+                        <li><a href="#tentang">Alur Pembelian</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-nav">
+                    <h4>Model Populer</h4>
+                    <ul>
+                        <li><a href="#katalog" data-quick-search="BeAT">Honda BeAT Series</a></li>
+                        <li><a href="#katalog" data-quick-search="Scoopy">Honda Scoopy</a></li>
+                        <li><a href="#katalog" data-quick-search="Vario 125">Honda Vario 125</a></li>
+                        <li><a href="#katalog" data-quick-search="PCX 160">Honda PCX 160</a></li>
+                        <li><a href="#katalog" data-quick-search="ADV 160">Honda ADV 160</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 RJM MOTOR. Seluruh hak cipta dilindungi.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Detail Motor -->
+    <!-- Modal Detail Motor -->
+    <div class="modal-backdrop" id="motorDetailModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalMotorTitle">
+        <div class="modal-container">
+            <div class="modal-header">
+                <div>
+                    <span class="modal-brand-badge" id="modalBrandBadge">HONDA</span>
+                    <h2 class="modal-title" id="modalMotorTitle">Detail Sepeda Motor</h2>
+                </div>
+                <!-- Tambahkan onclick="closeMotorModal()" langsung di sini agar selalu bisa ditutup -->
+                <button type="button" class="modal-close-btn" id="closeModalBtn" onclick="closeMotorModal()" aria-label="Tutup Detail Motor">&times;</button>
+            </div>
+
+            <div class="modal-body">
+                <div class="modal-grid">
+                    <!-- Kolom Kiri: Gambar Slider, Warna & Info Harga -->
+                    <div class="modal-visual-col">
+                        <div class="modal-img-wrapper slider-container">
+                            <div class="slider-track" id="modalSliderTrack"></div>
+                            <button type="button" class="slider-btn prev-btn" id="sliderPrevBtn" aria-label="Gambar Sebelumnya">&#10094;</button>
+                            <button type="button" class="slider-btn next-btn" id="sliderNextBtn" aria-label="Gambar Selanjutnya">&#10095;</button>
+                            <div class="slider-dots" id="sliderDots"></div>
+                        </div>
+                        <div class="modal-price-card">
+                            <div class="mp-row">
+                                <div>
+                                    <span class="mp-label" id="modalPriceLabel">Harga OTR Tunai</span>
+                                    <div class="mp-price font-mono" id="modalOtrPrice">Rp 0</div>
+                                </div>
+                                <div class="mp-dp-box">
+                                    <span class="mp-label">DP Mulai Dari</span>
+                                    <div class="mp-dp font-mono" id="modalMinDp">Rp 0</div>
+                                </div>
+                            </div>
+                            <div class="mp-source-meta">
+                                <span><strong>Sumber Data:</strong> <span id="modalPriceSource">-</span></span>
+                                <span><strong>Pembaruan:</strong> <span id="modalLastUpdated">-</span></span>
+                            </div>
+                        </div>
+
+                        <div class="modal-colors-block">
+                            <h4>Pilihan Warna Terverifikasi:</h4>
+                            <div class="color-tags" id="modalColorList"></div>
+                        </div>
+                    </div>
+
+                    <!-- Kolom Kanan: Pembelian, Spesifikasi, Garansi -->
+                    <div class="modal-specs-col">
+                        <p class="modal-description" id="modalDescription"></p>
+
+                        <!-- Opsi Pembelian Tunai / Kredit -->
+                        <div class="purchase-option-box">
+                            <h4>Pilihan Metode Pembelian:</h4>
+                            <div class="purchase-tabs">
+                                <label class="purchase-radio">
+                                    <input type="radio" name="modalPurchaseType" value="Tunai (Cash)" checked>
+                                    <span class="radio-box">
+                                        <strong>Pembelian Tunai (Cash)</strong>
+                                        <small>Harga OTR termasuk pengurusan STNK, BPKB & Plat Nomor</small>
+                                    </span>
+                                </label>
+                                <label class="purchase-radio">
+                                    <input type="radio" name="modalPurchaseType" value="Kredit (Cicilan)">
+                                    <span class="radio-box">
+                                        <strong>Pembelian Kredit (Cicilan)</strong>
+                                        <small>Tersedia pilihan tenor 11, 17, 23, 29, hingga 35 bulan</small>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Spesifikasi Utama -->
+                        <div class="specs-block">
+                            <h4>Spesifikasi Teknis Utama</h4>
+                            <table class="specs-table" id="modalSpecsTable">
+                                <tbody></tbody>
+                            </table>
+                        </div>
+
+                        <!-- Informasi Garansi Pabrikan -->
+                        <div class="warranty-block">
+                            <h4>Ketentuan Garansi Resmi Produsen</h4>
+                            <ul class="warranty-list" id="modalWarrantyList"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="modalWaBtn">
+                    Tanya Sales Tentang Unit Ini (WhatsApp)
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification untuk Peringatan Konfigurasi -->
+    <div id="toastNotification" class="toast-notification" role="status" aria-live="polite"></div>
+
+    <!-- Scripts -->
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
