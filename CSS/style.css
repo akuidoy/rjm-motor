@@ -1211,18 +1211,15 @@ select {
 }
 
 .footer-logo {
-    display: inline-flex;
-    align-items: center;
-    height: auto !important;
-    max-height: none !important;
+    display: inline-block;
     margin-bottom: 14px;
 }
 
-.footer-logo .brand-logo-img {
-    height: 52px;
+.footer-logo-img {
+    height: 48px;
     width: auto;
-    margin-left: 0 !important;
-    transform: none !important;
+    display: block;
+    object-fit: contain;
 }
 
 .footer-desc {
@@ -1863,12 +1860,9 @@ select {
     }
 
     .footer-top {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
         gap: 32px;
-    }
-
-    .footer-brand {
-        grid-column: auto;
     }
 
     .modal-backdrop {
