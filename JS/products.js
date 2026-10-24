@@ -90,11 +90,11 @@ const MOTOR_PRODUCTS = [
         priceSource: "PT Astra Honda Motor (astra-honda.com)",
         lastUpdated: "Januari 2026",
         minDp: 2300000,
-        image: "ASET/IMAGES/varian-2-3-26062026-063605.webp",
+        image: "ASET/IMAGES/beatstreet/varian-2-3-26062026-063605.webp",
       images: [
-            "ASET/IMAGES/varian-2-3-26062026-063605.webp", // Slide 1 (Cocok dengan warna ke-1)
-            "ASET/IMAGES/varian-3-1-1-30062026-033754.webp",       // Slide 2 (Cocok dengan warna ke-2)
-            "ASET/IMAGES/varian-1-3-26062026-063608.webp"  
+            "ASET/IMAGES/beatstreet/varian-2-3-26062026-063605.webp", // Slide 1 (Cocok dengan warna ke-1)
+            "ASET/IMAGES/beatstreet/varian-3-1-1-30062026-033754.webp",       // Slide 2 (Cocok dengan warna ke-2)
+            "ASET/IMAGES/beatstreet/varian-1-3-26062026-063608.webp"  
         ],
         // 3. Nama tombol warna (urutannya menyesuaikan daftar images di atas):
         colors: [
@@ -136,11 +136,11 @@ const MOTOR_PRODUCTS = [
         priceSource: "PT Astra Honda Motor (astra-honda.com)",
         lastUpdated: "Januari 2026",
         minDp: 2500000,
-        image: "ASET/beatkey/blue-key.jpeg",
+        image: "ASET/IMAGES/beatkey/blue-key.jpeg",
         images: [
-            "ASET/beatkey/bworn-key.jpeg",
-            "ASET/beatkey/blue-key.jpeg",
-            "ASET/beatkey/black-key.jpeg"
+            "ASET/IMAGES/beatkey/bworn-key.jpeg",
+            "ASET/IMAGES/beatkey/blue-key.jpeg",
+            "ASET/IMAGES/beatkey/black-key.jpeg"
         ],
         colors: ["Deluxe Matte Brown", "Deluxe Matte Blue", "Deluxe Matte Black"],
         specs: {
@@ -305,6 +305,8 @@ const MOTOR_PRODUCTS = [
         minDp: 3000000,
         image: "ASET/IMAGES/vario/varian-warna-9-1-05122025-011001.webp",
         images: [
+            "ASET/IMAGES/vario/mint.png",
+            "ASET/IMAGES/vario/image.png",
             "ASET/IMAGES/vario/varian-warna-9-1-05122025-011001.webp"
         ],
         colors: ["Sporty Mint", "Sporty Red", "Sporty Black"],
@@ -341,9 +343,12 @@ const MOTOR_PRODUCTS = [
         priceSource: "PT Astra Honda Motor (astra-honda.com)",
         lastUpdated: "Januari 2026",
         minDp: 4200000,
-        image: "ASET/IMAGES/varian-warna-515x504-05-3-11022026-055545.webp",
+        image: "ASET/IMAGES/pcx/varian-warna-515x504-05-3-11022026-055545.webp",
         images: [
-            "ASET/IMAGES/varian-warna-515x504-05-3-11022026-055545.webp"
+            "ASET/IMAGES/pcx/white.png",
+            "ASET/IMAGES/pcx/silver.png",
+            "ASET/IMAGES/pcx/varian-warna-515x504-05-3-11022026-055545.webp",
+            "ASET/IMAGES/pcx/image.png"
         ],
         colors: ["Exceptional White", "Exceptional Matte Silver", "Exceptional Red", "Exceptional Black"],
         specs: {
