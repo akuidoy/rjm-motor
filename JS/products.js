@@ -41,7 +41,7 @@ const MOTOR_PRODUCTS = [
         minDp: 2300000,
         image: "ASET/IMAGES/beat-cbs.png",
       images: [
-            "ASET/IMAGES/merah-hitam.png", // Slide 1 (Cocok dengan warna ke-1)
+            "ASET/IMAGES/beatcbs/cbs-merah.png", // Slide 1 (Cocok dengan warna ke-1)
             "ASET/IMAGES/biru-hitam.png",       // Slide 2 (Cocok dengan warna ke-2)
             "ASET/IMAGES/beat-cbs.png",
             "ASET/IMAGES/biru-merah.png",       // Slide 2 (Cocok dengan warna ke-2)
